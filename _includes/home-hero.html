@@ -2,10 +2,12 @@
 
   <header class="hero-header">
 
+    <i class="modal__open"></i>
+
     <div class="title-left">
 
       {% if site.title != '' %}
-        <h1 class="hero-title hero-h1"><a href="#">{{site.title}}</a></h1>
+        <h1 class="hero-title hero-h1"><a href="{{ '/index.html' | prepend: site.baseurl}}">{{site.title}}</a></h1>
       {% endif %}
 
       {% if site.subtitle != '' %}

@@ -1,15 +1,14 @@
 ---
 layout: home
 ---
-<i class="modal__open"></i>
 
 <div class="body-flex-content">
 
-  <div class="flex-content1">
+  <div class="flex-content-1">
     <img src="{{'/assets/images/paul2.jpg' | prepend: site.baseurl }}">
   </div>
   
-  <div class="flex-content2">
+  <div class="flex-content-2">
 
   <table>
     <tr>
@@ -27,7 +26,7 @@ layout: home
     {% include post-content.html %}
   {% endfor %}
 
-  <button class="btn">contact me</button>
+  <a href="{{ '/contact.html' | prepend: site.baseurl }}"><button class="btn">contact me</button></a>
     
   <form action="https://formspree.io/mjvojndz" method="POST">
     <div class="form-example">

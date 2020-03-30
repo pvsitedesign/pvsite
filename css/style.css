@@ -50,10 +50,6 @@ p {
     background-color: #ffffff;
 }
 
-form {
-  display: none;
-}
-
 .modal__open {
     display: inline-block;
     width: 45px;
@@ -76,6 +72,10 @@ form {
 
 .ovh {
   overflow: hidden;
+}
+
+img {
+  width: 100%;
 }
 
 /* home-hero.html */
@@ -125,14 +125,48 @@ form {
   padding: 0 0 3px;
 }
 
+.font_21 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 21px;
+  font-weight: bold
+}
+
 .font_15 {
   font-size: 15px;
+}
+
+.font_12 {
+  font: normal normal normal 15px/1.3em 'Open Sans',sans-serif;
+}
+
+.text_centre {
+  text-align: center;
 }
 
 /*post-content.html*/
 
 .post-title {
   padding: 4px 0;
+}
+
+/*contact.html*/
+
+.flex-contact-1 table:first-of-type {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-contact-1 table:last-of-type {
+  padding: 0 0 40px 0;
+}
+
+.border_img {
+  border: 6px solid #71589b;
+}
+
+.contact-form table:first-of-type {
+  display: flex;
+  justify-content: center;
 }
 
 /*modal*/
