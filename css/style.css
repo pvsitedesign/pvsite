@@ -57,7 +57,7 @@ p {
     overflow: hidden;
     position: absolute;
     top: 30px;
-    right: 30px;
+    right: 5%;
     cursor: pointer;
 }
 
@@ -66,8 +66,12 @@ p {
     width: 100%;
     height: 100%;
     content: '';
-    background-image: url(../assets/images/icons/open.svg);
+    background-image: url(../assets/images/icons/purple-burger-2.png);
     background-size: 100% 100%;
+}
+
+svg:hover {
+  color: red;
 }
 
 .ovh {
@@ -167,6 +171,51 @@ img {
 .contact-form table:first-of-type {
   display: flex;
   justify-content: center;
+  margin: 0 0 5px 0;
+}
+
+/*contact form*/
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #71589b;
+}
+
+input::placeholder {
+  opacity: .5;
+}
+
+label {
+  display: none;
+}
+
+.form-example {
+  margin: 0 0 20px 0;
+}
+
+form div:last-child {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+form div:last-child input {
+  width: 100px;
+  background-color: #71589b;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.1s linear;
+  outline: none;
+}
+
+form div:last-child input:hover {
+    color: #71589b;
+    background-color: #ffffff;
+}
+
+.contact-form form div:nth-child(4) input {
+  padding: 8px 8px 88px 8px;
 }
 
 /*modal*/
@@ -209,8 +258,8 @@ img {
   height: 25px;
   overflow: hidden;
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 40px;
+  right: 7%;
   cursor: pointer;
 }
 
