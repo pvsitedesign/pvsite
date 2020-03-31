@@ -86,7 +86,7 @@ img {
 
 .hero-container {
   margin: 0 auto;
-  padding: 0 5%;
+  max-width: 1140px;
 }
 
 .hero-title {
@@ -114,7 +114,8 @@ img {
 /* index.html */
 
 .body-container {
-  padding: 0 5%;
+  margin: 0 auto;
+  max-width: 1140px;
 }
 
 .body-flex-content {
@@ -168,6 +169,10 @@ img {
   border: 6px solid #71589b;
 }
 
+.flex_img_extra_margin {
+  margin: 0 5% 40px 5%;
+}
+
 .contact-form table:first-of-type {
   display: flex;
   justify-content: center;
@@ -210,12 +215,24 @@ form div:last-child input {
 }
 
 form div:last-child input:hover {
-    color: #71589b;
-    background-color: #ffffff;
+  color: #71589b;
+  background-color: #ffffff;
 }
 
 .contact-form form div:nth-child(4) input {
   padding: 8px 8px 88px 8px;
+}
+
+/*cv*/
+
+.flex-cv-1 table:last-of-type {
+  padding: 0 0 60px 0;
+}
+
+.flex-cv-3 table {
+  width: 1140px;
+  margin: 5px 0 40px 0;
+  font-size: 15px;
 }
 
 /*modal*/
