@@ -238,7 +238,8 @@ form div:last-child input:hover {
 }
 
 .flex-cv-3 table {
-  width: 1140px;
+  width: 100%;
+  table-layout: fixed;
   margin: 5px 0 40px 0;
   font-size: 15px;
 }
