@@ -1,0 +1,12 @@
+/*a stylesheet by lewis bentley 1 april 2020*/
+
+
+/* ----------------------------------------------- */
+/* MAX WIDTH                                       */
+/* ----------------------------------------------- */
+
+@media (max-width: 500px) {
+  .flex-cv-3 {
+    display: none;
+  }
+}
