@@ -91,6 +91,7 @@ img {
 .hero-container {
   margin: 0 auto;
   max-width: 1140px;
+  padding: 0 5%;
 }
 
 .hero-title {
@@ -120,6 +121,7 @@ img {
 .body-container {
   margin: 0 auto;
   max-width: 1140px;
+  padding: 0 5%;
 }
 
 .body-flex-content {
@@ -261,6 +263,7 @@ form div:last-child input:hover {
 .flex-media-1 li {
   list-style: none;
   width: 40%;
+  padding: 0 0 18px 0;
 }
 
 .flex-media-1 li:nth-child(odd) {
@@ -269,6 +272,19 @@ form div:last-child input:hover {
 
 .flex-media-1 li:nth-child(even) {
   margin: 0 6.7% 0 3%;
+}
+
+.list-videos li {
+  list-style: none;
+  width: 80%;
+}
+
+.list-videos li:nth-child(odd) {
+  margin: 0 auto;
+}
+
+.list-videos li:nth-child(even) {
+  margin: 0 auto;
 }
 
 /*modal*/
