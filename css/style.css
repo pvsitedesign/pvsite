@@ -116,6 +116,42 @@ img {
   min-height: 200px;
 }
 
+.logo-icons {
+  display: flex;
+  flex-wrap: wrap;
+  height: 150px;
+  width: 200px;
+}
+
+.logo-icons div {
+  width: 50%;
+  height: 50%;
+}
+
+.fill {
+  overflow: hidden;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fill-1 {
+  background-image: url('/pv_site/assets/images/icons/spotlight-logo.jpg');
+}
+.fill-2 {
+  background-image: url('/pv_site/assets/images/icons/the-mandy-network-logo.svg');
+}
+.fill-3 {
+  background-image: url('/pv_site/assets/images/icons/vjm-logo.jpg');
+}
+.fill-4 {
+  background-image: url('/pv_site/assets/images/icons/equity-logo.jpg');
+}
+
+.social-icons {
+
+}
+
 /* index.html */
 
 .body-container {
