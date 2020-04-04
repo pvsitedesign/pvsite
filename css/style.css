@@ -113,19 +113,38 @@ img {
 .hero-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   min-height: 200px;
 }
 
 .logo-icons {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   height: 150px;
   width: 200px;
+  min-height: 150px;
+  min-width: 200px;
 }
 
 .logo-icons div {
-  width: 50%;
-  height: 50%;
+  width: 47%;
+  height: 47%;
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 150px;
+  width: 215px;
+  min-height: 150px;
+  min-width: 215px;
+}
+
+.social-icons div {
+  width: 20%;
+  height: auto;
 }
 
 .fill {
@@ -135,21 +154,55 @@ img {
   background-repeat: no-repeat;
 }
 
-.fill-1 {
+.fill-logo-1 {
   background-image: url('/pv_site/assets/images/icons/spotlight-logo.jpg');
 }
-.fill-2 {
+.fill-logo-2 {
   background-image: url('/pv_site/assets/images/icons/the-mandy-network-logo.svg');
 }
-.fill-3 {
+.fill-logo-3 {
   background-image: url('/pv_site/assets/images/icons/vjm-logo.jpg');
 }
-.fill-4 {
+.fill-logo-4 {
   background-image: url('/pv_site/assets/images/icons/equity-logo.jpg');
 }
 
-.social-icons {
+.fill-social-1 {
+  background-image: url('/pv_site/assets/images/icons/fbook-logo.png');
+}
+.fill-social-2 {
+  background-image: url('/pv_site/assets/images/icons/twitter-logo.png');
+}
+.fill-social-3 {
+  background-image: url('/pv_site/assets/images/icons/insta-logo.png');
+}
+.fill-social-4 {
+  background-image: url('/pv_site/assets/images/icons/vimeo-logo.png');
+}
 
+/*nav bar*/
+
+nav {
+  display: block;
+  width: 1000px;
+  margin: auto;
+  background: #eee;
+}
+nav ul {
+  display: block;
+  margin: auto; 
+  list-style: none;
+
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+nav ul li {
+  display: inline-block;
+  min-width: 24%;
+  width: 24%;
 }
 
 /* index.html */
