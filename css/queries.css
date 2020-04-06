@@ -2,13 +2,41 @@
 
 
 /* ----------------------------------------------- */
-/* MAX WIDTH                                       */
+/* MIN WIDTH                                       */
 /* ----------------------------------------------- */
 
 @media (min-width: 500px) {
   /*  hamburger icon*/
   .modal__open {
     display: none;
+  }
+  /*index*/
+  .index-flex-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .index-flex-content .flex-content-1 {
+    width: 48.5%;
+  }
+  .index-flex-content .flex-content-2 {
+    width: 48.5%;
+
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+  }
+  .btn {
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
+
+  .index-flex-content .index-player {
+    display: flex;
+    flex-grow: 1;
+  }
+  .index-flex-content .index-player iframe {
+
   }
 }
 

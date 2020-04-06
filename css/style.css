@@ -239,6 +239,20 @@ nav ul li table tr td:hover:after {
   flex-direction: column;
 }
 
+.index-flex-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.index-flex-content .index-player {
+  display: none;
+}
+
+.index-player {
+  width: 100%;
+  margin: auto;
+}
+
 .font_23 {
   font-family: 'Raleway', sans-serif;
   font-size: 23px;
