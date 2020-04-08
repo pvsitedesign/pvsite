@@ -20,23 +20,22 @@
   }
   .index-flex-content .flex-content-2 {
     width: 48.5%;
-
-    display: flex;
-    flex-flow: column;
-    height: 100%;
   }
   .btn {
     display: block;
     width: 50%;
     margin: auto;
   }
-
-  .index-flex-content .index-player {
-    display: flex;
-    flex-grow: 1;
+  /*cv text and picture*/
+  .cv-flex-content {
+    flex-direction: row;
   }
-  .index-flex-content .index-player iframe {
-
+  .flex-cv-1 {
+    width: 50%;
+    margin-top: 12%;
+  }
+  .flex-cv-2 {
+    width: 50%;
   }
 }
 
@@ -46,6 +45,20 @@
 
 @media (max-width: 500px) {
    /*cv tables*/
+  .flex-cv-3 {
+    display: none;
+  }
+  /*hide icons and nav*/
+  .logo-icons {
+    display: none;
+  }
+  .social-icons {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  /*cv table*/
   .flex-cv-3 {
     display: none;
   }

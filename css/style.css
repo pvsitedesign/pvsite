@@ -242,15 +242,16 @@ nav ul li table tr td:hover:after {
 .index-flex-content {
   display: flex;
   flex-direction: column;
+  margin-bottom: 70px;
 }
 
-.index-flex-content .index-player {
-  display: none;
+.flex-content-2 {
+  display: flex;
+  flex-direction: column;
 }
 
-.index-player {
-  width: 100%;
-  margin: auto;
+.index-video {
+  margin: auto 0 4px 0;
 }
 
 .font_23 {
@@ -300,7 +301,7 @@ nav ul li table tr td:hover:after {
 }
 
 .flex_img_extra_margin {
-  margin: 0 5% 40px 5%;
+  margin: 40px 5% 40px 5%;
 }
 
 .contact-form table:first-of-type {
@@ -354,6 +355,10 @@ form div:last-child input:hover {
 }
 
 /*cv*/
+.cv-flex-content {
+  display: flex;
+  flex-direction: column;
+}
 
 .flex-cv-1 table:last-of-type {
   padding: 0 0 60px 0;
@@ -364,6 +369,19 @@ form div:last-child input:hover {
   table-layout: fixed;
   margin: 5px 0 40px 0;
   font-size: 15px;
+}
+
+.cv-pdf-flex {
+  width: 100%;
+  display: flex;
+}
+
+.cv-pdf-flex p {
+  width: 60%;
+}
+
+.pdf-icon {
+  width: 50px;
 }
 
 /*media*/
