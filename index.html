@@ -1,37 +1,35 @@
 ---
 layout: home
+current: home
 ---
 
-<div class="body-flex-content">
 
-  <div class="index-flex-content">
+<div class="index-flex-content">
 
-    <div class="flex-content-1">
-      <img src="{{'/assets/images/paul2.jpg' | prepend: site.baseurl }}">
-    </div>
-    
-    <div class="flex-content-2">
+  <div class="flex-content-1">
+    <img src="{{'/assets/images/paul2.jpg' | prepend: site.baseurl }}">
+  </div>
+  
+  <div class="flex-content-2">
 
-      <h5 class="font_23">Recent</h5>
+    <h5 class="font_23">Upcoming</h5></td>
 
-      {% for post in paginator.posts %}
-        {% include recent-post-content.html %}
-      {% endfor %}
+    {% for post in paginator.posts %}
+      {% include upcoming-post-content.html %}
+    {% endfor %}
 
-      <h5 class="font_23">Upcoming</h5></td>
+    <h5 class="font_23">Recent</h5>
 
-      {% for post in paginator.posts %}
-        {% include upcoming-post-content.html %}
-      {% endfor %}
+    {% for post in paginator.posts %}
+      {% include recent-post-content.html %}
+    {% endfor %}
 
-      <!-- <a href="{{ '/contact.html' | prepend: site.baseurl }}"><button class="btn">contact me</button></a> -->
+    <!-- <a href="{{ '/contact.html' | prepend: site.baseurl }}"><button class="btn">contact me</button></a> -->
 
-      <div class="index-video">
-        
-        <div style="--aspect-ratio: 16/9;">
-          <iframe title="vimeo-player" src="https://player.vimeo.com/video/88589771" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-        </div>
-
+    <div class="index-video">
+      
+      <div style="--aspect-ratio: 16/9;">
+        <iframe title="vimeo-player" src="https://player.vimeo.com/video/88589771" width="640" height="360" frameborder="0" allowfullscreen></iframe>
       </div>
 
     </div>

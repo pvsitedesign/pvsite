@@ -7,10 +7,10 @@
 
               <div class="modal__links">
 
-                  <a href="#">Home</a>
+                  <a href="{{ '/index.html' | prepend: site.baseurl }}">Home</a>
                   <a href="{{ '/cv.html' | prepend: site.baseurl }}">CV</a>
                   <a href="{{ '/media.html' | prepend: site.baseurl }}">Media</a>
-                  <a href="#">Contact</a>
+                  <a href="{{ '/contact.html' | prepend: site.baseurl }}">Contact</a>
 
               </div>
 
@@ -19,7 +19,7 @@
   </section>
 
   <!-- Scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="{{ '/assets/scripts/modal.js' | prepend: site.baseurl }}"></script>
 
   </body>

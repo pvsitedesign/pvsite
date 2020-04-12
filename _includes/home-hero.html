@@ -45,16 +45,16 @@
   <nav>
     <ul class="text_centre">
       <li>
-        <table><tr><td><a href="{{ '/index.html' | prepend: site.baseurl }}">Home</a></td></tr></table>
+        <table><tr><td><a {% if page.current == 'home' %}style="border-bottom: 5px solid #71589b;"{% endif %}href="{{ '/index.html' | prepend: site.baseurl }}">Home</a></td></tr></table>
       </li>
       <li>
-        <table><tr><td><a href="{{ '/cv.html' | prepend: site.baseurl }}">CV</a></td></tr></table>
+        <table><tr><td><a {% if page.current == 'cv' %}style="border-bottom: 5px solid #71589b;"{% endif %} href="{{ '/cv.html' | prepend: site.baseurl }}">CV</a></td></tr></table>
       </li>
       <li>
-        <table><tr><td><a href="{{ '/media.html' | prepend: site.baseurl }}">Media</a></td></tr></table>
+        <table><tr><td><a {% if page.current == 'media' %}style="border-bottom: 5px solid #71589b;"{% endif %} href="{{ '/media.html' | prepend: site.baseurl }}">Media</a></td></tr></table>
       </li>
       <li>
-        <table><tr><td><a href="{{ '/contact.html' | prepend: site.baseurl }}">Contact</a></td></tr></table>
+        <table><tr><td><a {% if page.current == 'contact' %}style="border-bottom: 5px solid #71589b;"{% endif %} href="{{ '/contact.html' | prepend: site.baseurl }}">Contact</a></td></tr></table>
       </li>
     </ul>
   </nav>

@@ -31,7 +31,6 @@ p {
 }
 
 .btn {
-    width: 100%;
     display: inline-block;
     border: 5px solid #71589b;
     background-color: #71589b;
@@ -42,7 +41,6 @@ p {
     outline: none;
     padding: 10px;
     font: 600 16px/1 "Work Sans", sans-serif;
-    margin: 30px 0;
 }
 
 .btn:hover {
@@ -92,6 +90,7 @@ img {
   margin: 0 auto;
   max-width: 1140px;
   padding: 0 5%;
+  overflow-wrap: break-word;
 }
 
 .hero-title {
@@ -185,7 +184,7 @@ img {
 
 nav {
   display: block;
-  width: 1000px;
+  width: 100%;
   margin: auto auto 20px auto;
 }
 nav ul {
@@ -217,7 +216,7 @@ nav ul li table {
 nav ul li table tr td:after {
     display:block;
     content: '';
-    border-bottom: 3px solid #1d1d1d;  
+    border-bottom: 5px solid #71589b;
     transform: scaleX(0);  
     transition: transform 125ms ease-in-out;
 }
@@ -234,15 +233,10 @@ nav ul li table tr td:hover:after {
   padding: 0 5%;
 }
 
-.body-flex-content {
-  display: flex;
-  flex-direction: column;
-}
-
 .index-flex-content {
   display: flex;
   flex-direction: column;
-  margin-bottom: 70px;
+  margin: 0 0 20px 0;
 }
 
 .flex-content-2 {
@@ -287,12 +281,21 @@ nav ul li table tr td:hover:after {
 
 /*contact.html*/
 
-.flex-contact-1 table:first-of-type {
+.flex-contact-container {
   display: flex;
   justify-content: center;
 }
 
-.flex-contact-1 table:last-of-type {
+.flex-contact-left {
+  width: 50%;
+  padding: 5%;
+}
+
+.flex-contact-4 {
+  width: 50%;
+}
+
+.flex-contact-1 p:last-of-type {
   padding: 0 0 40px 0;
 }
 
@@ -300,13 +303,11 @@ nav ul li table tr td:hover:after {
   border: 6px solid #71589b;
 }
 
-.flex_img_extra_margin {
-  margin: 40px 5% 40px 5%;
+.flex_img_extra_padding {
+  padding: 40px 5% 40px 5%;
 }
 
 .contact-form table:first-of-type {
-  display: flex;
-  justify-content: center;
   margin: 0 0 5px 0;
 }
 
@@ -357,7 +358,14 @@ form div:last-child input:hover {
 /*cv*/
 .cv-flex-content {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   flex-direction: column;
+}
+
+.flex-cv-1 img {
+  width: 75%;
+  padding: 0 0 20px 20%;
 }
 
 .flex-cv-1 table:last-of-type {
@@ -377,11 +385,24 @@ form div:last-child input:hover {
 }
 
 .cv-pdf-flex p {
-  width: 60%;
+  width: 55%;
 }
 
-.pdf-icon {
+.flex-cv-1 div {
+  padding: 0 0 0 20%;
+}
+
+.flex-cv-1 > p {
+  padding: 0 0 0 20%;
+}
+
+ a #pdf-icon {
   width: 50px;
+  padding: 0
+}
+
+.flex-contact-1 img {
+  display: none;
 }
 
 /*media*/
