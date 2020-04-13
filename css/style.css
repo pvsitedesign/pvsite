@@ -356,11 +356,13 @@ form div:last-child input:hover {
 }
 
 /*cv*/
+
 .cv-flex-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
+  margin: 0 0 20px 0;
 }
 
 .flex-cv-1 img {
@@ -388,14 +390,6 @@ form div:last-child input:hover {
   width: 55%;
 }
 
-.flex-cv-1 div {
-  padding: 0 0 0 20%;
-}
-
-.flex-cv-1 > p {
-  padding: 0 0 0 20%;
-}
-
  a #pdf-icon {
   width: 50px;
   padding: 0
@@ -403,6 +397,10 @@ form div:last-child input:hover {
 
 .flex-contact-1 img {
   display: none;
+}
+
+.flex-cv-1 > p {
+  margin-bottom: 20px;
 }
 
 /*media*/

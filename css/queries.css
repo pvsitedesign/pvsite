@@ -35,6 +35,12 @@
     width: 50%;
     padding: 3% 5% 0 0;
   }
+  .flex-cv-1 div {
+    padding: 0 0 0 20%;
+  }  
+  .flex-cv-1 > p {
+    padding: 0 0 0 20%;
+  }
   /* media photos */
   .flex-media-1 ul:first-of-type li {
     width: 20%;
@@ -77,7 +83,7 @@
   .flex-cv-3 {
     display: none;
   }
-  .flex-cv-1 img {
+  .flex-cv-1 > img {
     display: none;
   }
   /*hide icons and nav*/
