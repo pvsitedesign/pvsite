@@ -1,5 +1,5 @@
 ---
-title: "NEW POST, 29/4/20"
-date: 2020-04-29
-  - jekyll
+title: VINTER
+date: 2020-04-29T00:00:00.000Z
+published: true
 ---
