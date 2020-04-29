@@ -22,6 +22,9 @@
   .index-flex-content .flex-content-2 {
     width: 48.5%;
   }
+  .flex-content-1 div {
+    display: none;
+  }
   /*cv text and picture*/
   .cv-flex-content {
     flex-direction: row;
@@ -40,6 +43,9 @@
   }  
   .flex-cv-1 > p {
     padding: 0 0 0 20%;
+  }
+  #pdf-icon {
+    display: none;
   }
   /* media photos */
   .flex-media-1 ul:first-of-type li {
@@ -71,6 +77,13 @@
   /* header size */
   .hero-header {
     max-width: 50%;
+  }
+  /* show mobile logos */
+  .fill-logo-2 {
+    background-image: url('/pv_site/assets/images/icons/the-mandy-network-logo-mobile.svg'); 
+  }
+  .fill-logo-4 {
+    background-image: url('/pv_site/assets/images/icons/equity.jpg');
   }
   /* index-video */
   .index-video {
@@ -113,11 +126,11 @@
   }
 }
 
-@media (max-width: 760px) {
+/* @media (max-width: 760px) {
   .social-icons {
     display: none;
   }
   .index-video {
     display: none;
   }
-}
+} */

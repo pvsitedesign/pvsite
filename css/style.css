@@ -100,7 +100,7 @@ img {
 }
 
 .hero-h1 {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 55px;
 }
 
@@ -122,14 +122,13 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   height: 150px;
-  width: 200px;
-  min-height: 150px;
-  min-width: 200px;
+  width: 300px;
 }
 
 .logo-icons a {
-  width: 47%;
-  height: 47%;
+  width: 20%;
+  height: 100%;
+  margin-right: 10px;
 }
 
 .social-icons {
@@ -138,8 +137,6 @@ img {
   justify-content: space-between;
   height: 150px;
   width: 215px;
-  min-height: 150px;
-  min-width: 215px;
 }
 
 .social-icons a {
@@ -158,10 +155,10 @@ img {
   background-image: url('/pv_site/assets/images/icons/spotlight-logo.jpg');
 }
 .fill-logo-2 {
-  background-image: url('/pv_site/assets/images/icons/the-mandy-network-logo.svg');
+  background-image: url('/pv_site/assets/images/icons/the-mandy-network-logo.svg'); 
 }
 .fill-logo-3 {
-  background-image: url('/pv_site/assets/images/icons/vjm-logo.jpg');
+  background-image: url('/pv_site/assets/images/icons/vjm.jpg');
 }
 .fill-logo-4 {
   background-image: url('/pv_site/assets/images/icons/equity-logo.jpg');
@@ -178,6 +175,30 @@ img {
 }
 .fill-social-4 {
   background-image: url('/pv_site/assets/images/icons/vimeo-logo.png');
+}
+
+.flex-content-1 div {
+  margin-top: 20px;
+}
+
+.logo-icons-mobile {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.social-icons-mobile {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.logo-icons-mobile a {
+  width: 25%;
+}
+
+.social-icons-mobile a {
+  width: 25%;
 }
 
 /*nav bar*/
@@ -251,6 +272,7 @@ nav ul li table tr td:hover:after {
 .font_23 {
   font-family: 'Raleway', sans-serif;
   font-size: 23px;
+  letter-spacing: 0.1em;
   border-bottom: 7px solid #71589b;
   padding: 0 0 3px;
 }
@@ -276,7 +298,7 @@ nav ul li table tr td:hover:after {
 /*post-content.html*/
 
 .post-title {
-  padding: 4px 0;
+  padding-top: 10px;
 }
 
 /*contact.html*/
@@ -298,6 +320,11 @@ nav ul li table tr td:hover:after {
 .flex-contact-1 p:last-of-type {
   padding: 0 0 40px 0;
 }
+
+.flex-contact-1 p:first-of-type {
+  padding: 25px 0 0 0;
+}
+
 
 .border_img {
   border: 6px solid #71589b;
@@ -547,4 +574,17 @@ form div:last-child input:hover {
     left: 0;
     height: 100%;
   }  
+}
+
+/* copyright container */
+
+.copyright-container {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 8px;
+  color: #adadad;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
 }

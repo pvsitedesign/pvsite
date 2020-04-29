@@ -7,21 +7,47 @@ current: home
 <div class="index-flex-content">
 
   <div class="flex-content-1">
+    
     <img src="{{'/assets/images/paul2.jpg' | prepend: site.baseurl }}">
+        
+    <div class="logo-icons-mobile">
+      
+      <a class="fill fill-logo-1" href="http://www.spotlight.com/4218-8948-9534"></a>
+      
+      <a class="fill fill-logo-2" href="https://www.mandy.com/actor/profile/paul-valentine"></a>
+      
+      <a class="fill fill-logo-3" href="http://www.vjmgt.co.uk/"></a>
+      
+      <a class="fill fill-logo-4" href="https://www.equity.org.uk/looking-for-work/member-profiles/paul-valentine-actor/"></a>
+
+    </div>
+
+    <div class="social-icons-mobile">
+
+      <a class="fill fill-social-1" href="http://www.facebook.com/paul.valentine2"></a>
+
+      <a class="fill fill-social-2" href="http://www.twitter.com/PaulValentine"></a>
+
+      <a class="fill fill-social-3" href="https://www.instagram.com/paulvalentine87/"></a>
+
+      <a class="fill fill-social-4" href="https://vimeo.com/paulvalentine"></a>
+    
+    </div>
+
   </div>
   
   <div class="flex-content-2">
 
     <h5 class="font_23">Upcoming</h5></td>
 
-    {% for post in paginator.posts %}
-      {% include upcoming-post-content.html %}
+    {% for post in site.posts limit:1 %}
+      {% include post-content.html %}
     {% endfor %}
 
     <h5 class="font_23">Recent</h5>
 
-    {% for post in paginator.posts %}
-      {% include recent-post-content.html %}
+    {% for post in site.posts offset:1 limit:2 %}
+      {% include post-content.html %}
     {% endfor %}
 
     <!-- <a href="{{ '/contact.html' | prepend: site.baseurl }}"><button class="btn">contact me</button></a> -->
