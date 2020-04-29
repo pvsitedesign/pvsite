@@ -1,7 +1,7 @@
 ---
-title: "THE REMARKABLE ROCKET, Cat & Hutch / Bread & Roses Theatre, Sam Luffman"
-date: 2020-03-22 16:28:27 +0000
-categories: jekyll
+title: "THE MERRY WIVES OF SPAM, The Festival Players UK & Europe Tour, Michael Dyer"
+date: 2020-03-23 16:29:27 +0000
+categories: jekyll update
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
