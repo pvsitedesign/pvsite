@@ -122,6 +122,7 @@
   }
   .flex-contact-1 img {
     display: block;
+    margin-bottom: 15px;
   }
   .flex-contact-left {
     width: 100%;
