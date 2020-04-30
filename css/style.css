@@ -181,6 +181,10 @@ img {
   margin-top: 20px;
 }
 
+.flex-content-2 p:first-of-type {
+  margin-bottom: 25px;
+}
+
 .logo-icons-mobile {
   display: flex;
   justify-content: space-between;
