@@ -30,24 +30,6 @@ p {
   margin: 0;
 }
 
-.btn {
-    display: inline-block;
-    border: 5px solid #71589b;
-    background-color: #71589b;
-    text-transform: uppercase;
-    color: #ffffff;
-    cursor: pointer;
-    transition: all 0.1s linear;
-    outline: none;
-    padding: 10px;
-    font: 600 16px/1 "Work Sans", sans-serif;
-}
-
-.btn:hover {
-    color: #71589b;
-    background-color: #ffffff;
-}
-
 .modal__open {
     display: inline-block;
     width: 45px;
@@ -66,10 +48,6 @@ p {
     content: '';
     background-image: url(../assets/images/icons/purple-burger-2.png);
     background-size: 100% 100%;
-}
-
-svg:hover {
-  color: red;
 }
 
 .ovh {
@@ -390,15 +368,17 @@ form div:last-child input:hover {
 
 .cv-flex-content {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
-  margin: 0 0 20px 0;
+  flex-wrap: wrap;
 }
 
-.flex-cv-1 img {
-  width: 75%;
-  padding: 0 0 20px 20%;
+.flex-cv-1,
+.flex-cv-2 {
+  margin-bottom: 35px;
+}
+
+.cv-flex-content ul li:not(:last-child) {
+  padding-bottom: 20px;
 }
 
 .flex-cv-1 table:last-of-type {
@@ -409,29 +389,11 @@ form div:last-child input:hover {
   width: 100%;
   table-layout: fixed;
   margin: 5px 0 40px 0;
-  font-size: 15px;
+  /* font-size: 15px; */
 }
 
-.cv-pdf-flex {
-  width: 100%;
-  display: flex;
-}
-
-.cv-pdf-flex p {
-  width: 55%;
-}
-
- a #pdf-icon {
-  width: 50px;
-  padding: 0
-}
-
-.flex-contact-1 img {
-  display: none;
-}
-
-.flex-cv-1 > p {
-  margin-bottom: 20px;
+.flex-cv-3 tr:nth-of-type(odd) { 
+  background: #eee; 
 }
 
 /*media*/

@@ -40,8 +40,10 @@ current: home
 
     <h5 class="font_23">Upcoming</h5></td>
 
-    {% for post in site.posts limit:1 %}
-      {% include post-content.html %}
+    {% for post in site.posts %}
+      {% if post.upcoming == true %}
+        {% include post-content.html %}
+      {% endif %}
     {% endfor %}
 
     <h5 class="font_23">Recent</h5>

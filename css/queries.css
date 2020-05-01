@@ -26,9 +26,6 @@
     display: none;
   }
   /*cv text and picture*/
-  .cv-flex-content {
-    flex-direction: row;
-  }
   .flex-cv-1 {
     width: 50%;
     /* margin-top: 12%; */
@@ -41,12 +38,6 @@
   .flex-cv-1 div {
     padding: 0 0 0 20%;
   }  
-  .flex-cv-1 > p {
-    padding: 0 0 0 20%;
-  }
-  #pdf-icon {
-    display: none;
-  }
   /* media photos */
   .flex-media-1 ul:first-of-type li {
     width: 20%;
@@ -95,13 +86,6 @@
   .flex-content-2 p:last-of-type {
     margin-bottom: 15px;
   }
-   /*cv tables*/
-  .flex-cv-3 {
-    display: none;
-  }
-  .flex-cv-1 > img {
-    display: none;
-  }
   /*hide icons and nav*/
   .logo-icons {
     display: none;
@@ -111,11 +95,7 @@
   }
   nav {
     display: none;
-  }
-  /*cv table*/
-  .flex-cv-3 {
-    display: none;
-  }
+  }  
   /* contact */
   .flex-contact-4 {
     display: none;
@@ -128,7 +108,38 @@
     width: 100%;
     padding: 0;
   }
+  /*cv table*/
+  .flex-cv-3 tr:not(:nth-of-type(-n+3)){
+    display: none;
+  }
+  .flex-cv-3 table,
+  .flex-cv-3 tbody,
+  .flex-cv-3 tr,
+  .flex-cv-3 td {
+    display: block;
+  }
+  .flex-cv-3 td {
+    position: relative;
+    padding-left: 50%;
+    padding-bottom: 8px;
+  }
+  .flex-cv-3 td:before {
+    position: absolute;
+    width: 45%;
+    top: 6px;
+    left: 6px;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  .flex-cv-3 td:nth-of-type(1):before { content: "Title"; }
+  .flex-cv-3 td:nth-of-type(2):before { content: "Role"; }
+  .flex-cv-3 td:nth-of-type(3):before { content: "Company"; }
+  .flex-cv-3 td:nth-of-type(4):before { content: "Director"; }
 }
+
+/* ----------------------------------------------- */
+/* ICONS STACK                                     */
+/* ----------------------------------------------- */
 
 @media (max-width: 760px) {
   .social-icons {

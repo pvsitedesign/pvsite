@@ -8,20 +8,14 @@ current: cv
 
   <div class="flex-cv-1">
 
-    <img src="{{'/assets/images/scroll-2.jpg' | prepend: site.baseurl }}" alt="">
-
-    <div class="cv-pdf-flex">
-      <p><span class="text-light">Height: </span>5'8"<br><span class="text-light">Hair: </span>Red/Titian<br><span class="text-light">Eyes: </span>Blue</p>
-      <a href="https://docdro.id/egzjFlh"><img id="pdf-icon" src="{{ '/assets/images/icons/pdf-icon.png' | prepend: site.baseurl }}"></a>
-    </div><br><br>
-
     <p>
+      <p><span class="text-light">Height: </span>5'8"<br><span class="text-light">Hair: </span>Red/Titian<br><span class="text-light">Eyes: </span>Blue</p>
       <span class="text-light">Location: </span>London<br><span class="text-light">Playing Age: </span> 16 - 25 years<br><span class="text-light">Voice Character: </span>Enthusiastic
     </p>
 
   </div>
 
-  <div class="flex-cv-2 flex_img_extra_margin">    
+  <div class="flex-cv-2">    
     <img src="{{'/assets/images/paul4.jpg' | prepend: site.baseurl }}" class="border_img">
   </div>
 
@@ -30,23 +24,35 @@ current: cv
     <p class="font_23">Theatre</p>
 
     <table>
+
+      {% for post in site.posts %}
+        {% if post.category == "theatre" and post.upcoming != true %}
+          <tr>
+            <td>{{ post.title }}</td>
+            <td>{{ post.role }}</td>
+            <td>{{ post.company }}</td>
+            <td>{{ post.director }}</td>
+          </tr>
+        {% endif %}
+      {% endfor %}
+
       <tr>
-        <td><p>THE REMARKABLE ROCKET</p></td>
-        <td><p>Rocket</p></td>
-        <td><p>Cat & Hutch / Bread & Roses Theatre</p></td>
-        <td><p>Sam Luffman</p></td>
+        <td>THE REMARKABLE ROCKET</td>
+        <td>Rocket</td>
+        <td>Cat & Hutch / Bread & Roses Theatre</td>
+        <td>Sam Luffman</td>
       </tr>
       <tr>
-        <td><p>THE MERRY WIVES OF WINDSOR</p></td>
-        <td><p>Ford/Slender</p></td>
-        <td><p>The Festival Players UK & Europe Tour</p></td>
-        <td><p>Michael Dyer</p></td>
+        <td>THE MERRY WIVES OF WINDSOR</td>
+        <td>Ford/Slender</td>
+        <td>The Festival Players UK & Europe Tour</td>
+        <td>Michael Dyer</td>
       </tr>
       <tr>
-        <td><p>ASYLUM MONOLOGUES</p></td>
-        <td><p>Sayid</p></td>
-        <td><p>Ice and Fire</p></td>
-        <td><p>Charltte George</p></td>
+        <td>ASYLUM MONOLOGUES</td>
+        <td>Sayid</td>
+        <td>Ice and Fire</td>
+        <td>Charltte George</td>
       </tr>
       <tr>
         <td>THE SEAGULL</td>
@@ -185,6 +191,18 @@ current: cv
     <p class="font_23">Film</p>
 
     <table>
+
+      {% for post in site.posts %}
+        {% if post.category == "theatre" and post.upcoming != true  %}
+          <tr>
+            <td>{{ post.title }}</td>
+            <td>{{ post.role }}</td>
+            <td>{{ post.company }}</td>
+            <td>{{ post.director }}</td>
+          </tr>
+        {% endif %}
+      {% endfor %}
+
       <tr>
         <td>TOMMY'S GUN</td>
         <td>Ryan</td>
@@ -238,6 +256,18 @@ current: cv
     <p class="font_23">Further Credits</p>
 
     <table>
+
+      {% for post in site.posts %}
+        {% if post.category == "credits" and post.upcoming != true  %}
+          <tr>
+            <td>{{ post.title }}</td>
+            <td>{{ post.role }}</td>
+            <td>{{ post.company }}</td>
+            <td>{{ post.director }}</td>
+          </tr>
+        {% endif %}
+      {% endfor %}
+
       <tr>
         <td>EPIPHANY</td>
         <td>Rehearsed Reading, Luce</td>
@@ -339,34 +369,27 @@ current: cv
     </ul>
 
     <p class="font_23">Special Skills</p>
-
-    <table>
-      <tr>
-        <td>
           
-          <p>Accents & Dialects: <br>
-            (* = native) American-Standard, Cockney, Estuary English, Glasgow, Heightened RP, Kent*, London*, RP, Scottish-Standard <br><br>
+      <p><br>Accents & Dialects: <br>
+        br(* = native) American-Standard, Cockney, Estuary English, Glasgow, Heightened RP, Kent*, London*, RP, Scottish-Standard <br><br>
 
-            Languages: <br>
-            (* = Native/Fluent) English* <br><br>
+        Languages: <br>
+        (* = Native/Fluent) English* <br><br>
 
-            Music & Dance:<br>
-            (* = highly skilled) Guitar*, Guitar-Electric*<br><br>
+        Music & Dance:<br>
+        (* = highly skilled) Guitar*, Guitar-Electric*<br><br>
 
-            Performance:Actor-Musician, ADR-Additional Dialogue Recording, BASSC-Rapier, Dagger & Unarmed (pass), Clown, Comedy, Commedia Dell'Arte, Mask, Musical Comedy, Physical Theatre, Role Play, Voice Over<br><br>
+        Performance:Actor-Musician, ADR-Additional Dialogue Recording, BASSC-Rapier, Dagger & Unarmed (pass), Clown, Comedy, Commedia Dell'Arte, Mask, Musical Comedy, Physical Theatre, Role Play, Voice Over<br><br>
 
-            Sports:<br>
-            (* = highly skilled) Stage Combat, Yoga<br><br>
+        Sports:<br>
+        (* = highly skilled) Stage Combat, Yoga<br><br>
 
-            Vehicle Licences: Car Driving Licence <br><br>
+        Vehicle Licences: Car Driving Licence <br><br>
 
-            Other Skills: Computer Literate, Drama Workshop Leader <br>
-          </p>
+        Other Skills: Computer Literate, Drama Workshop Leader <br>
+      </p>
 
-        </td>
-      </tr>
-    </table>
-
+      <a src="http://www.spotlight.com/4218-8948-9534"><img src="{{'/assets/images/icons/spotlight-logo.jpg' | prepend: site.baseurl}}" alt=""></a>
   </div>
 
 </div>
