@@ -37,7 +37,13 @@
   }
   .flex-cv-1 div {
     padding: 0 0 0 20%;
-  }  
+  }
+  tbody tr:nth-child(3)::after {
+    display: none;
+  }
+  .flex-cv-spotlight {
+    display: none;
+  }
   /* media photos */
   .flex-media-1 ul:first-of-type li {
     width: 20%;
@@ -53,6 +59,9 @@
   }
   /* contact form */
   .flex-contact-2 {
+    display: none;
+  }
+  .flex-contact-1 img {
     display: none;
   }
   .flex-contact-4 {
@@ -120,8 +129,8 @@
   }
   .flex-cv-3 td {
     position: relative;
-    padding-left: 50%;
-    padding-bottom: 8px;
+    padding: 5px 0 8px 50%;
+    
   }
   .flex-cv-3 td:before {
     position: absolute;

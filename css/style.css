@@ -216,15 +216,13 @@ nav ul li table {
   margin: 0 auto;
 }
 
-nav ul li table tr td:after {
-    display:block;
-    content: '';
-    border-bottom: 5px solid #71589b;
-    transform: scaleX(0);  
-    transition: transform 125ms ease-in-out;
+nav ul li table tr td {
+  border-bottom: 2px solid #A984E8;
+  background-color: transparent;
+  padding: 5px;
 }
-nav ul li table tr td:hover:after {
-    transform: scaleX(1);
+nav ul li table tr td:hover {
+  background-color: #A984E8;
 }
 
 
@@ -255,7 +253,7 @@ nav ul li table tr td:hover:after {
   font-family: 'Raleway', sans-serif;
   font-size: 23px;
   letter-spacing: 0.1em;
-  border-bottom: 7px solid #71589b;
+  border-bottom: 4px solid #71589b;
   padding: 0 0 3px;
 }
 
@@ -394,6 +392,42 @@ form div:last-child input:hover {
 
 .flex-cv-3 tr:nth-of-type(odd) { 
   background: #eee; 
+}
+
+.flex-cv-3 td {
+  padding: 5px 0 5px 0;
+}
+
+.flex-cv-3::after {
+  display: block;
+  content: '';
+  padding-bottom: 20px;
+  border-bottom: 4px solid #71589b;
+}
+
+tbody tr:nth-child(3)::after {
+  display: block;
+  content: '...';
+  padding-left: 6px;
+}
+
+.flex-cv-spotlight {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.flex-cv-spotlight p {
+  width: 80%;
+  margin: 0 0 18px 0;
+}
+
+.flex-cv-spotlight a {
+  display: block;
+  margin: 0;
+  width: 30%;
 }
 
 /*media*/
