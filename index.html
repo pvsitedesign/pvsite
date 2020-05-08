@@ -43,6 +43,7 @@ current: home
     {% for post in site.posts %}
       {% if post.upcoming == true %}
         {% include post-content.html %}
+        {% break %}
       {% endif %}
     {% endfor %}
 
