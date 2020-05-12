@@ -1,0 +1,8 @@
+---
+title: is a 1979 Soviet science fiction art film directed by Andrei Tarkovsky with a screenplay written by Boris and Arkady Strugatsky, loosely based on their 1972 novel Roadside Picnic. The film combines elements of science fiction with dramatic philosophical and psychological themes.[5] Modern reviews of Stalker have been highly positive.
+category: theatre
+role: actor
+company: National Theatre
+director: Anthony Nolan
+upcoming: false
+---

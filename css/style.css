@@ -422,6 +422,7 @@ tbody tr:nth-child(3)::after {
 .flex-cv-spotlight p {
   width: 80%;
   margin: 0 0 18px 0;
+  text-align: center;
 }
 
 .flex-cv-spotlight a {

@@ -5,5 +5,4 @@ title: RICHARD III
 role: ACTOR
 company: GUILD
 director: HYTNER
-upcoming: true
 ---
