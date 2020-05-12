@@ -405,6 +405,10 @@ form div:last-child input:hover {
   border-bottom: 4px solid #71589b;
 }
 
+.NEW-STYLE {
+  color: black;
+}
+
 tbody tr:nth-child(3)::after {
   display: block;
   content: '...';
