@@ -49,7 +49,7 @@ current: home
 
     <h5 class="font_23">Recent</h5>
 
-    {% for post in site.posts offset:1 limit:2 %}
+    {% for post in site.posts limit:2 offset:1 %}
       {% include post-content.html %}
     {% endfor %}
 
