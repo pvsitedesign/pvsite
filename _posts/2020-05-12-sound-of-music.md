@@ -8,7 +8,7 @@ category: film
 role: writer
 company: Mosfilm
 director: Andrei Tarkovsky
-upcoming: true
+upcoming: false
 ---
 ## A New Post
 
