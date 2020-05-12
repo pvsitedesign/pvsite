@@ -1,8 +1,9 @@
 ---
 published: true
 title: >-
-  Stalker, a 1979 Soviet science fiction art film directed by Andrei Tarkovsky
-  with a screenplay written by Boris and Arkady Strugatsky.
+  The Sound of Music is a musical with music by Richard Rodgers, lyrics by Oscar
+  Hammerstein II, and a book by Howard Lindsay and Russel Crouse. It is based on
+  the 1949 memoir of Maria von Trapp, The Story of the Trapp Family Singers.
 category: film
 role: writer
 company: Mosfilm
